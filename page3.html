@@ -1,31 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="utf-8">
     <title>LUC Study</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
-  </head>
-  <body>
-    <div class="span6">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
+    <!-- CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+
+      /* Sticky footer styles
+      -------------------------------------------------- */
+
+      html,
+      body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+      .page-header {
+      margin: 20px 0 5px;
+    }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 60px;
+      }
+      #footer {
+        background-color: #f5f5f5;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+      /* Custom page CSS
+      -------------------------------------------------- */
+      /* Not required for template or sticky footer method. */
+
+      .container {
+        width: auto;
+        max-width: 680px;
+      }
+      .container .credit {
+        margin: 20px 0;
+      }
+
+      .containerBottom {
+        text-align: center;
+      }
+
+    </style>
+    <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="./ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="./ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="./ico/favicon.png">
+  </head>
+
+  <body>
+
+
+    <!-- Part 1: Wrap all page content here -->
+    <div id="wrap">
+
+      <!-- Begin page content -->
+      <div class="container">
+        <div class="page-header">
     <h2>Confidentiality</h2>
-      <p>Confidentiality will be maintained to the degree permitted by the technology used. Information obtained as a result of this study will be kept confidential.  All data will be kept in a password-protected file. Only the listed researchers will have access to the data, and identifying information will be stored separately from response data.  All identifying information will be destroyed, once the study has concluded and all of the prizes have been awarded (1 week after the data has been collected). </p>
+      </div>
+        <p class="lead">Confidentiality will be maintained to the degree permitted by the technology used. Information obtained as a result of this study will be kept confidential.  All data will be kept in a password-protected file. Only the listed researchers will have access to the data, and identifying information will be stored separately from response data.  All identifying information will be destroyed, once the study has concluded and all of the prizes have been awarded (1 week after the data has been collected). </p>
+    <div class="page-header">
     <h2>Voluntary Participation</h2>
-      <p>Participation in this study is voluntary.If you do not want to be in this study, you do not have to participate.  Even if you decide to participate, you are free to withdraw at any time without penalty. </p>
+      </div>
+        <p class="lead">Participation in this study is voluntary.If you do not want to be in this study, you do not have to participate.  Even if you decide to participate, you are free to withdraw at any time without penalty. </p>
+    <div class="page-header">
     <h2>Contacts & Questions</h2>
-      <p>If you have questions about this research study, please contact the researcher at lucthinkingstylesstudy@hotmail.com.</p>  
+      </div>
+        <p class="lead">If you have questions about this research study, please contact the researcher at lucthinkingstylesstudy@hotmail.com.</p>  
       <p>If you have questions about your rights as a research participant, you may contact the Loyola University Chicago Office of Research Services at 1 (773) 508-2689.</p>
+    <div class="page-header">
     <h2>Statement of Consent</h2>
-      <p>By checking the box below, you are agreeing to participate in the research.</p>
+      </div>
+        <p class="lead">By checking the box below, you are agreeing to participate in the research.</p>
         <label class="checkbox">
         <input type="checkbox" value=""> I am at least 18 years old and I agree to participate.</label>
         <br>
 
-    <!-- only appear/active if button is checkbox is active-->
-    <a class="btn btn-large btn-success" href="page4.html">  Next  </a>
-  </div>
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
+      </div>
+      <div class="containerBottom"> 
+        <a class="btn btn-large" href="page4.html">Next</a>
+      </div>
+<!-- 
+      <div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+        <p class="muted credit">Example courtesy <a href="http://martinbean.co.uk">Martin Bean</a> and <a href="http://ryanfait.com/sticky-footer/">Ryan Fait</a>.</p>
+      </div>
+    </div>
+
+-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap-alert.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+    <script src="./js/bootstrap-dropdown.js"></script>
+    <script src="./js/bootstrap-scrollspy.js"></script>
+    <script src="./js/bootstrap-tab.js"></script>
+    <script src="./js/bootstrap-tooltip.js"></script>
+    <script src="./js/bootstrap-popover.js"></script>
+    <script src="./js/bootstrap-button.js"></script>
+    <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/bootstrap-carousel.js"></script>
+    <script src="./js/bootstrap-typeahead.js"></script>
+
   </body>
 </html>
