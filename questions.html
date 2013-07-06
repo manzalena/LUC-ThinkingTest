@@ -57,10 +57,10 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
-      .container {
+      .container-fluid {
         width: auto;
-        max-width: 680px;
-        margin-top: 40px;
+        max-width: 820px;
+        margin-top: 20px;
       }
       .container .credit {
         margin: 20px 0;
@@ -68,6 +68,10 @@
 
       .containerBottom {
         text-align: center;
+      }
+
+      .userAvatar {
+        margin-top:20px;
       }
 
     </style>
@@ -93,7 +97,13 @@
     <div id="wrap">
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class="container-fluid">
+         <!-- Sidebar / Avatar -->
+          <div class ="span3 text-center">
+            <img class="userAvatar" src="./img/avatar-02.png">
+          </div>
+      <!-- Body Content -->
+      <div class="span9">
 
 <!-- Q1 -->
     <div class="question">
@@ -334,7 +344,7 @@
     <div class="containerBottom"> 
         <a class="btn" href="#">Submit</a>
       </div>
-</br>
+ </div> <!-- End Body Content -->
 
 </div>
       <div class="containerBottom"> 
