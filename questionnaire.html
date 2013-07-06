@@ -55,17 +55,24 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
-      .container {
+      .container-fluid {
         width: auto;
-        max-width: 680px;
+        max-width: 820px;
+        margin: 20px;
       }
-      .container .credit {
+      .container-fluid.credit {
         margin: 20px 0;
       }
 
       .containerBottom {
         text-align: center;
       }
+
+      .userAvatar {
+        margin-top:20px;
+      }
+
+    
 
     </style>
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
@@ -88,9 +95,15 @@
 
     <!-- Part 1: Wrap all page content here -->
     <div id="wrap">
-
       <!-- Begin page content -->
-      <div class="container">
+      <div class ="container-fluid">
+        <div class="row-fluid">
+        <!-- Sidebar / Avatar -->
+          <div class ="span3 text-center">
+            <img class="userAvatar" src="./img/avatar-02.png">
+          </div>
+        <!-- Body Content -->
+      <div class="span9">
         <div class="page-header">
           <h2>Situational Preferences Questionnaire</h2>
         </div>
@@ -99,10 +112,14 @@
         <p class="lead">In some cases, both sentences may appear to be true of you. If this occurs, select the optionthat is more consistently true for you. Likewise, if you encounter a pair of sentences where neither option seems very true for you, one may still be slightly more true. Please select the option that seems more true.</p>
 
         <p class="lead">Do not spend too much time on each question. Please answer according to your initial reaction.</p>
-      </div>
+     
       <div class="containerBottom"> 
         <a class="btn btn-large" href="questions.html">Start</a>
       </div>
+      </div> <!-- End Body Content -->
+    </div>
+    </div> <!-- closes container-fluid -->
+  </div>
 <!-- 
       <div id="push"></div>
     </div>
