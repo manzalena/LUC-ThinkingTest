@@ -60,17 +60,21 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
-      .container {
+      .container-fluid {
         width: auto;
-        max-width: 680px;
+        max-width: 820px;
+        margin: 20px;
       }
-      .container .credit {
+      .container-fluid.credit {
         margin: 20px 0;
       }
 
       .containerBottom {
         text-align: center;
-        margin-bottom: 20px;
+      }
+
+      .userAvatar {
+        margin-top:20px;
       }
 
     </style>
@@ -96,9 +100,16 @@
     <div id="wrap">
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class ="container-fluid">
+        <div class="row-fluid">
+        <!-- Sidebar / Avatar -->
+          <div class ="span3 text-center">
+            <img class="userAvatar" src="./img/avatar-02.png">
+          </div>
+        <!-- Body Content -->
+      <div class="span9">
         <div class="page-header">
-          <h2></h2>
+          <h2>Example of Investment Activity Round</h2>
         </div>
         <p class="lead">The investor will click on the Endowment Spinner that will determine whether the researcher give them $5, $10, or $15.</p>
 
@@ -122,10 +133,14 @@
 
         <p class="lead">Now this round has been completed. </p>
 
-      </div>
+     
       <div class="containerBottom"> 
         <a class="btn btn-large" href="investment3.html">Next</a>
       </div>
+      </div>
+    </div> <!-- closes row-fluid -->
+    </div> <!-- closes container-fluid -->
+  </div>
 <!-- 
       <div id="push"></div>
     </div>
