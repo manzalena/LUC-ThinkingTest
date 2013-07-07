@@ -55,16 +55,21 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
-      .container {
+     .container-fluid {
         width: auto;
-        max-width: 680px;
+        max-width: 820px;
+        margin: 20px;
       }
-      .container .credit {
+      .container-fluid.credit {
         margin: 20px 0;
       }
 
       .containerBottom {
         text-align: center;
+      }
+
+      .userAvatar {
+        margin-top:20px;
       }
 
     </style>
@@ -90,18 +95,31 @@
     <div id="wrap">
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class="container-fluid">
+          <div class="row-fluid">
+        <!-- Sidebar / Avatar -->
+          <div class ="span3 text-center">
+            <img class="userAvatar" src="./img/avatar-02.png">
+          </div>
+        <!-- Body Content -->
+      <div class="span9">
         <div class="page-header">
           <h2>Investment Activity Instructions</h2>
         </div>
         <p class="lead">You will be making a series of four investment-related decisions.  These investment activities will be performed by pairs of individuals. Each pair consists of an investor and an executor.  If there aren’t enough participants online at the time that you are beginning the study, you will be asked to come back at a different time.  You will be engaging in this investment activity with someone else who happens to be online at the same time as you. You will not know the identities of the other participants, nor will they know who you are.  The only information that you will be able to see, and that others will be able to see about you, is your identification number, avatar, and T or Q thinking style.  All identification and response information will be kept strictly confidential, and you will be notified if you are awarded any money at the end of the study.</p>
 
          <p class="lead">You will participate in 3-7 rounds of the investment activity.  The investment activity will proceed as follows:</p>
+ 
 
-      </div>
+    
       <div class="containerBottom"> 
         <a class="btn btn-large" href="investment2.html">Next</a>
       </div>
+           </div> <!-- End Body Content -->
+            </div> <!-- closes row-fluid -->
+      </div> <!-- closes container-fluid -->
+      </div> <!-- closes wrap -->
+
 <!-- 
       <div id="push"></div>
     </div>
