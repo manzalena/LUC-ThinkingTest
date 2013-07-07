@@ -40,21 +40,22 @@ cursor: default;
 }
 
       /* Wrapper for page content to push down footer */
-      #wrap {
+     #wrap {
         min-height: 100%;
         height: auto !important;
         height: 100%;
         /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
+        margin: 0 auto -30px;
       }
 
       /* Set the fixed height of the footer here */
       #push,
       #footer {
-        height: 60px;
+        height: 30px;
       }
       #footer {
-        background-color: #f5f5f5;
+        background-color: #ffffff;
+        
       }
 
       /* Lastly, apply responsive CSS fixes as necessary */
@@ -70,10 +71,13 @@ cursor: default;
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
-      .container {
+      
+      .container-fluid {
         width: auto;
-        max-width: 680px;
+        max-width: 820px;
+        margin:20px;
       }
+
       .container .credit {
         margin: 0px 0;
       }
@@ -107,7 +111,14 @@ cursor: default;
     <div id="wrap">
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class="container-fluid">
+        <div class="row-fluid">
+        <!-- Sidebar / Avatar -->
+          <div class ="span3 text-left" style="margin-top:15px; max-width 100px; color:#CFCFCF">
+            <h1>LUC Thinking Study</h1>
+          </div>
+        <!-- Body Content -->
+      <div class="span9">
         <div class="page-header">
         <h2>Sign in</h2>
         </div>
@@ -159,18 +170,66 @@ cursor: default;
           <div class="control-group span4">
             <a href="#"><img class="avatarImg" src="./img/avatar-09.png"></a>
           </div>
-        </div>        
-    </div>
+        </div> 
+
+
+   
     <div class="containerBottom"> 
 <!--     <div class="control-group"> -->
           <a class="btn btn-large" href="questionnaire.html">Sign in</a>
        <!--  </div> -->
       </div>
+       </div>
   </div>
+</div> <!--closes container-fluid-->
+  <div id="push"></div>
+</div> <!-- closes wrap-->
+
+<div id="footer">
+      <!-- Button to trigger modal -->
+    <a href="#myModal" role="button" class="btn" data-toggle="modal"><i class="icon-info-sign"></i></a>
+ 
+  <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">LUC Thinking Study</h3>
+      </div>
+    <div class="modal-body">
+      <h4>Procedures & Compensation</h4>
+        <p>You must be 18 years old to participate.  If you decide to participate in this study, you will be asked to complete four tasks (two short surveys, an interactive investment activity, and a video clip).</p>
+
+        <p>The first survey will be a situational preference questionnaire. This will allow us to identify your thinking style. The second task will be to complete an interactive investment activity. You will be asked to make a series of investment decisions during each of 3 to 7 rounds of an online investment activity. One of these rounds one will be selected at random as the round that &ldquo;counts.&rdquo; One of ten pairs of participants will randomly be awarded the dollar amount that is yielded from the round that counts, in the form of AMAZON gift cards (one for each player). The second survey (and final task) is a short exit survey. It is not necessary for you to complete the study in all one sitting, but it is necessary for you to complete the each section in one sitting.</p>
+
+        <p>You may participate only once.  If you participate more than once, then any money earned on these subsequent participations will be forfeited.</p>
+
+        <p>To participate, you must be at least 18 years of age. Prizes cannot be awarded to anyone who is not at least 18 years old.</p>
+
+      <h4>Confidentiality</h4>
+        <p>Confidentiality will be maintained to the degree permitted by the technology used. Information obtained as a result of this study will be kept confidential.  All data will be kept in a password-protected file. Only the listed researchers will have access to the data, and identifying information will be stored separately from response data.  All identifying information will be destroyed, once the study has concluded and all of the prizes have been awarded (1 week after the data has been collected). </p>
+    <h4>Voluntary Participation</h4>
+        <p>Participation in this study is voluntary.If you do not want to be in this study, you do not have to participate.  Even if you decide to participate, you are free to withdraw at any time without penalty. </p>
+    <h4>Contacts & Questions</h4>
+        <p>If you have questions about this research study, please contact the researcher at lucthinkingstylesstudy@hotmail.com.</p>  
+      <p>If you have questions about your rights as a research participant, you may contact the Loyola University Chicago Office of Research Services at 1 (773) 508-2689.</p>
+    </div>
+
+
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="false">Close</button>
+    </div>
+
+  </div><!-- end Modal -->
+
+      
+    </div> <!-- end footer -->
+
 
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap-transition.js"></script>
     <script src="./js/bootstrap-alert.js"></script>
