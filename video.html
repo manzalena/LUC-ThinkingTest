@@ -55,20 +55,27 @@
       -------------------------------------------------- */
       /* Not required for template or sticky footer method. */
 
-      .container {
+      .container-fluid {
         width: auto;
-        max-width: 680px;
+        max-width: 820px;
+        margin: 20px;
       }
-      .container .credit {
+      .container-fluid.credit {
         margin: 20px 0;
       }
 
       .containerBottom {
         text-align: center;
+        margin-top: 20px;
+      }
+
+      .userAvatar {
+        margin-top:20px;
       }
 
     </style>
     <link href="./css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="http://vjs.zencdn.net/4.0/video-js.css" rel="stylesheet">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -81,6 +88,8 @@
       <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./ico/apple-touch-icon-72-precomposed.png">
                     <link rel="apple-touch-icon-precomposed" href="./ico/apple-touch-icon-57-precomposed.png">
                                    <link rel="shortcut icon" href="./ico/favicon.png">
+
+
   </head>
 
   <body>
@@ -90,26 +99,43 @@
     <div id="wrap">
 
       <!-- Begin page content -->
-      <div class="container">
+      <div class ="container-fluid">
+        <div class="row-fluid">
+        <!-- Sidebar / Avatar -->
+          <div class ="span3 text-center">
+            <img class="userAvatar" src="./img/avatar-02.png">
+          </div>
+        <!-- Body Content -->
+      <div class="span9">
         <div class="page-header">
           <h2></h2>
         </div>
         <p class="lead"></p>
-
-         <p class="lead">(The next button will not be there.  The next page will automatically load when the video stops.)</p>
-
-      </div>
-
+        
       <div class="containerBottom"> 
-        <video width="640" height="480" autoplay loop> 
-        <source src="./video/streets.mp4" type="video/mp4">
+        <video  id="video" width="640" height="364" autoplay > 
+        <source src="./video/colorChangingCardTrick.mp4" type="video/mp4">
         </video>
       </div>
 
+<!--
+      <script type="text/javascript">
+        VideoJS.DOMReady(function(){
+        var myPlayer = VideoJS.setup("video");
+        myPlayer.addVideoListener("ended", function(){ 
+          window.location = "http://google.com"; 
+          }, false);
+          myPlayer.play();
+        });
+      </script>
+-->
 
       <div class="containerBottom"> 
         <a class="btn btn-large" href="videoQuestionnaire.html">Next</a>
       </div>
+    </div> <!-- End Body Content -->
+    </div> <!-- End row-fluid -->
+    </div> <!-- End content-fluid -->
 <!-- 
       <div id="push"></div>
     </div>
@@ -125,6 +151,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://vjs.zencdn.net/4.0/video.js"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap-transition.js"></script>
     <script src="./js/bootstrap-alert.js"></script>
