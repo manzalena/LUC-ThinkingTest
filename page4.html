@@ -55,8 +55,10 @@ cursor: default;
       }
       #footer {
         background-color: #ffffff;
+        position:fixed; bottom:0px;
         
       }
+
 
       /* Lastly, apply responsive CSS fixes as necessary */
       @media (max-width: 767px) {
@@ -76,6 +78,7 @@ cursor: default;
         width: auto;
         max-width: 820px;
         margin:20px;
+        height:100%;
       }
 
       .container .credit {
@@ -112,13 +115,13 @@ cursor: default;
 
       <!-- Begin page content -->
       <div class="container-fluid">
-        <div class="row-fluid">
+        <div class="row-fluid" style="height:100">
         <!-- Sidebar / Avatar -->
-          <div class ="span3 text-left" style="margin-top:15px; max-width 100px; color:#CFCFCF">
+          <div id="mySidebar"class ="span3 text-left" style="margin-top:15px; max-width 100px; color:#CFCFCF">
             <h1>LUC Thinking Study</h1>
           </div>
         <!-- Body Content -->
-      <div class="span9">
+      <div class="span9"style="height:100%">
         <div class="page-header">
         <h2>Sign in</h2>
         </div>
@@ -189,7 +192,33 @@ cursor: default;
       <!-- Button to trigger modal -->
     <a href="#myModal" role="button" class="btn" data-toggle="modal"><i class="icon-info-sign"></i></a>
  
-  <!-- Modal -->
+  
+
+      
+    </div> <!-- end footer -->
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap-transition.js"></script>
+    <script src="./js/bootstrap-alert.js"></script>
+    <script src="./js/bootstrap-modal.js"></script>
+
+    <script src="./js/bootstrap-dropdown.js"></script>
+    <script src="./js/bootstrap-scrollspy.js"></script>
+    <script src="./js/bootstrap-tab.js"></script>
+    <script src="./js/bootstrap-tooltip.js"></script>
+    <script src="./js/bootstrap-popover.js"></script>
+    <script src="./js/bootstrap-button.js"></script>
+    <script src="./js/bootstrap-collapse.js"></script>
+    <script src="./js/bootstrap-carousel.js"></script>
+    <script src="./js/bootstrap-typeahead.js"></script>
+
+    <!-- Modal -->
     <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
@@ -220,29 +249,6 @@ cursor: default;
     </div>
 
   </div><!-- end Modal -->
-
-      
-    </div> <!-- end footer -->
-
-
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/bootstrap-transition.js"></script>
-    <script src="./js/bootstrap-alert.js"></script>
-    <script src="./js/bootstrap-modal.js"></script>
-    <script src="./js/bootstrap-dropdown.js"></script>
-    <script src="./js/bootstrap-scrollspy.js"></script>
-    <script src="./js/bootstrap-tab.js"></script>
-    <script src="./js/bootstrap-tooltip.js"></script>
-    <script src="./js/bootstrap-popover.js"></script>
-    <script src="./js/bootstrap-button.js"></script>
-    <script src="./js/bootstrap-collapse.js"></script>
-    <script src="./js/bootstrap-carousel.js"></script>
-    <script src="./js/bootstrap-typeahead.js"></script>
 
   </body>
 </html>
