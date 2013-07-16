@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -99,6 +98,7 @@
         <!-- Sidebar / Avatar -->
           <div class ="span3 text-center">
             <img class="userAvatar" src="../img/avatar-02.png">
+            <a href="#myModal" data-toggle="modal"> <img src="../img/i-for-info.png" style="padding:20px"></a>
           </div>
         <!-- Body Content -->
       <div class="span9">
@@ -137,6 +137,7 @@
     <!-- Le javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/bootstrap-transition.js"></script>
     <script src="../js/bootstrap-alert.js"></script>
@@ -150,6 +151,46 @@
     <script src="../js/bootstrap-collapse.js"></script>
     <script src="../js/bootstrap-carousel.js"></script>
     <script src="../js/bootstrap-typeahead.js"></script>
+
+     <!-- Modal -->
+    <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">LUC Thinking Study</h3>
+      </div>
+    <div class="modal-body">
+      <h4>Procedures & Compensation</h4>
+        <p>You must be 18 years old to participate.  If you decide to participate in this study, you will be asked to complete five short tasks:</p>
+          <ul>
+            <li><p>The first task will be to complete a situational preference questionnaire.  This will allow us to identify your thinking style.</p></li>
+            <li><p>The second task will be to complete an interactive investment activity.  This will allow us to see if there are any differences in the way that various thinking styles make investment decisions.</p></li>
+            <li><p>The third task will be to watch a short video (that lasts approximately 1 minute and 10 seconds).</p></li>
+            <li><p>The forth task will be to answer questions about the video.  This will allow us to see if there are any differences in the way that various thinking styles view the same video.</p></li>
+            <li><p>The fifth task will be to complete a short exit survey.</p></li>
+          </ul>
+
+        <p>During the interactive investment activity (the second task), you will be asked to make a series of investment decisions during each of 3-7 rounds of an online investment activity.  One of these rounds will be randomly selected to be considered “the round that counts.”  One of seven participants will be randomly selected to win an AMAZON gift card for the dollar amount the participant earned in “the round that counts.” You will learn which of your 3-7 rounds has been randomly selected as “the round that counts,” as soon as you complete all five tasks.  All participants will be notified as to whether or not they have been randomly selected to win an Amazon gift card 1 week after all of the data has been collected.</p>
+
+        <p>You may participate only once.  If you participate more than once, then any money earned on these subsequent participations will be forfeited.</p>
+
+        <p>To participate, you must be at least 18 years of age. Prizes cannot be awarded to anyone who is not at least 18 years old.</p>
+
+
+      <h4>Confidentiality</h4>
+        <p>Confidentiality will be maintained to the degree permitted by the technology used. Information obtained as a result of this study will be kept confidential.  All data will be kept in a password-protected file. Only the listed researchers will have access to the data, and identifying information will be stored separately from response data.  All identifying information will be destroyed, once the study has concluded and all of the prizes have been awarded (1 week after the data has been collected). </p>
+    <h4>Voluntary Participation</h4>
+        <p>Participation in this study is voluntary.If you do not want to be in this study, you do not have to participate.  Even if you decide to participate, you are free to withdraw at any time without penalty. </p>
+    <h4>Contacts & Questions</h4>
+        <p>If you have questions about this research study, please contact the researcher at lucthinkingstylesstudy@hotmail.com.</p>  
+      <p>If you have questions about your rights as a research participant, you may contact the Loyola University Chicago Office of Research Services at 1 (773) 508-2689.</p>
+    </div>
+
+
+    <div class="modal-footer">
+      <button class="btn" data-dismiss="modal" aria-hidden="false">Close</button>
+    </div>
+
+  </div> <!-- end Modal -->
 
   </body>
 </html>
